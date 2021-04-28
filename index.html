@@ -26,7 +26,7 @@
 				wdosboxUrl: "wdosbox.js"
 			}).ready(function (fs, main) {
 				fs.extractAll([ { url: "juegecitos.zip", mountPoint: "/juegecit" } /*, { url: "bc.zip", mountPoint: "/bc" }*/ ]).then(function () {
-					main(["-c", "cd /juegecit", "simon.exe"]).then(function (ci) {
+					main(["-c", "cd /juegecit", "-c", "simon.exe"]).then(function (ci) {
 						window.Module = ci.dos;
 						window.ci = ci;
 
