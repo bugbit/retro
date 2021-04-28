@@ -17,10 +17,20 @@
 				-webkit-user-select: none;
 				-moz-user-select: none;
 			}
+			button.key
+			{
+				font-size: larger;
+			}
 		</style>
 	</head>
 	<body>
 		<canvas id="jsdos" width="640" height="320"></canvas>
+		<div class="dosbox-container">
+			<p>
+				<button class='key' onclick='ci.simulateKeyPress(49)'>1</button>
+				<button class='key' onclick='ci.simulateKeyPress(50)'>2</button>
+			</p>
+		</div>
 		<script>
 			Dos(document.getElementById("jsdos"), {
 				wdosboxUrl: "wdosbox.js"
