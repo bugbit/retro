@@ -2,7 +2,7 @@
 	<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>juegecitos	</title>
+  <title>Simon</title>
   <script src="js-dos.js"></script>
 		<style>
 			html, body {
@@ -19,16 +19,35 @@
 			}
 			button.key
 			{
-				font-size: larger;
+				font-size: xxx-large;
+				width: 54px;
+				height: 54px;
+				/* justify-content: center; */
+				/* align-items: center; */
+				margin: 4px;
 			}
 		</style>
 	</head>
 	<body>
 		<canvas id="jsdos" width="640" height="320"></canvas>
-		<div class="dosbox-container">
+		<div style="position: relative; min-width: 320px; min-height: 200px;  display:flex; flex-direction: column; align-items: center;">
+			<p>
+			    <button class='key' onclick='ci.simulateKeyPress(81)'>Q</button>
+			    <button class='key' onclick='ci.simulateKeyPress(87)'>W</button>
+			    <button class='key' onclick='ci.simulateKeyPress(65)'>A</button>
+			    <button class='key' onclick='ci.simulateKeyPress(83)'>S</button>
+			    <button class='key' onclick='ci.simulateKeyPress(13)'> </button>
+			</p>
 			<p>
 				<button class='key' onclick='ci.simulateKeyPress(49)'>1</button>
 				<button class='key' onclick='ci.simulateKeyPress(50)'>2</button>
+				<button class='key' onclick='ci.simulateKeyPress(51)'>3</button>
+				<button class='key' onclick='ci.simulateKeyPress(52)'>4</button>
+				<button class='key' onclick='ci.simulateKeyPress(53)'>5</button>
+				<button class='key' onclick='ci.simulateKeyPress(54)'>6</button>
+				<button class='key' onclick='ci.simulateKeyPress(55)'>7</button>
+				<button class='key' onclick='ci.simulateKeyPress(56)'>8</button>
+				<button class='key' onclick='ci.simulateKeyPress(57)'>9</button>				
 			</p>
 		</div>
 		<script>
